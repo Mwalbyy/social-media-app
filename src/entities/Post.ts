@@ -1,10 +1,10 @@
 import { Entity, PrimaryKey, Property } from "@mikro-orm/core";
-import { title } from "process";
 
 @Entity()
 export class Post {
+
   @PrimaryKey()
-  id!: number;
+  _id!: number;
 
   @Property()
   createdAt = new Date();
@@ -13,6 +13,6 @@ export class Post {
   updatedAt = new Date();
 
   @Property()
-  !title: string;
+  name!: string;
 
 }
