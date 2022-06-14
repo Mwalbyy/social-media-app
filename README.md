@@ -1,1 +1,0 @@
-# Fullstack Social Media App
